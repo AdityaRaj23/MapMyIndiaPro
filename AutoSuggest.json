@@ -1,0 +1,152 @@
+{
+    "rowLocations": [],
+    "suggestedLocations": [
+      {
+        "alternateName": "",
+        "eLoc": "DDT7VL",
+        "keywords": [],
+        "orderIndex": 1,
+        "placeAddress": "North West District, Delhi",
+        "placeName": "Rohini",
+        "suggester": "placeName",
+        "type": "SUB_DISTRICT"
+      },
+      {
+        "alternateName": "Rohini",
+        "eLoc": "U9NU7W",
+        "keywords": [
+          "LCSBNO"
+        ],
+        "orderIndex": 2,
+        "placeAddress": "Rohini, Anayara, Thiruvananthapuram, Kerala, 695029",
+        "placeName": "SNNRA196",
+        "suggester": "alternateName",
+        "type": "HOUSE_NUMBER"
+      },
+      {
+        "alternateName": "Rohini",
+        "eLoc": "KU2VVS",
+        "keywords": [],
+        "orderIndex": 3,
+        "placeAddress": "Sikandra, Kanpur Dehat District, Uttar Pradesh, 209125",
+        "placeName": "Rohani",
+        "suggester": "alternateName",
+        "type": "VILLAGE"
+      },
+      {
+        "alternateName": "Rohini",
+        "eLoc": "8A8463",
+        "keywords": [],
+        "orderIndex": 4,
+        "placeAddress": "Kotdwar, Pauri Garhwal District, Uttarakhand, 246149",
+        "placeName": "Rohani Malli",
+        "suggester": "alternateName",
+        "type": "VILLAGE"
+      },
+      {
+        "alternateName": "",
+        "eLoc": "943OFH",
+        "keywords": [],
+        "orderIndex": 5,
+        "placeAddress": "New Delhi, Delhi, 110085",
+        "placeName": "Rohini Sector 5",
+        "suggester": "placeName",
+        "type": "LOCALITY"
+      },
+      {
+        "alternateName": "",
+        "eLoc": "17HR1X",
+        "keywords": [],
+        "orderIndex": 6,
+        "placeAddress": "New Delhi, Delhi, 110085",
+        "placeName": "Rohini Sector 10",
+        "suggester": "placeName",
+        "type": "LOCALITY"
+      },
+      {
+        "alternateName": "",
+        "eLoc": "1LEUJ3",
+        "keywords": [],
+        "orderIndex": 7,
+        "placeAddress": "New Delhi, Delhi, 110085",
+        "placeName": "Rohini Sector 8",
+        "suggester": "placeName",
+        "type": "LOCALITY"
+      },
+      {
+        "alternateName": "",
+        "eLoc": "M7IEQD",
+        "keywords": [],
+        "orderIndex": 8,
+        "placeAddress": "New Delhi, Delhi, 110085",
+        "placeName": "Rohini Sector 6",
+        "suggester": "placeName",
+        "type": "LOCALITY"
+      },
+      {
+        "alternateName": "",
+        "eLoc": "UAMS7S",
+        "keywords": [],
+        "orderIndex": 9,
+        "placeAddress": "New Delhi, Delhi, 110042",
+        "placeName": "Rohini Sector 19",
+        "suggester": "placeName",
+        "type": "LOCALITY"
+      },
+      {
+        "alternateName": "",
+        "eLoc": "3IC6CF",
+        "keywords": [],
+        "orderIndex": 10,
+        "placeAddress": "New Delhi, Delhi, 110085",
+        "placeName": "Rohini Sector 3",
+        "suggester": "placeName",
+        "type": "LOCALITY"
+      },
+      {
+        "alternateName": "",
+        "eLoc": "HKM3OT",
+        "keywords": [],
+        "orderIndex": 11,
+        "placeAddress": "New Delhi, Delhi, 110089",
+        "placeName": "Rohini Sector 18",
+        "suggester": "placeName",
+        "type": "LOCALITY"
+      },
+      {
+        "alternateName": "",
+        "eLoc": "XDXXR7",
+        "keywords": [],
+        "orderIndex": 12,
+        "placeAddress": "New Delhi, Delhi, 110085",
+        "placeName": "Rohini Sector 14",
+        "suggester": "placeName",
+        "type": "LOCALITY"
+      }
+    ],
+    "suggestedSearches": [],
+    "userAddedLocations": [
+      {
+        "eLoc": "ARFDW0",
+        "orderIndex": 13,
+        "placeAddress": "Rohini Homestay, West Bengal",
+        "placeName": "Rohini Homestay",
+        "type": ""
+      },
+      {
+        "eLoc": "1U9J6S",
+        "orderIndex": 14,
+        "placeAddress": "Block C, Rohini Sector 17, New Delhi, Delhi. 9 m from Rg Travels Rohini, Pin-110089",
+        "placeName": "R.G Travels Rohini",
+        "type": ""
+      },
+      {
+        "eLoc": "U2LMJQ",
+        "orderIndex": 15,
+        "placeAddress": "9/10 Rohini Muthuvanacode",
+        "placeName": "Vinod Kumar",
+        "type": ""
+      }
+    ]
+  }
+  

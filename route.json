@@ -1,0 +1,43 @@
+{
+    "Server": "DE-5102",
+    "code": "Ok",
+    "routes": [
+      {
+        "distance": 2935899.4,
+        "duration": 185769.3,
+        "geometry": "g_enDi|puMjw~BkrEtvbDrtgAd}zBjibBv`vBo_@r|fAvdoChruCgd`Bnp~FjxxD~phCwpf@pciAuhcA~xbHlacD|`|DcvbA|~y@ef_BrycCueb@d`mAlvSvdeBmpmAvihF~hgA~oeIge_Cn}tDqaDhsoGqytEt`gA_wlCxnjB~ma@zqfCqfV`maB~qp@lm~Cyu[patFjcx@|m_Bdp_Acoz@dcbB",
+        "legs": [
+          {
+            "distance": 2935899.4,
+            "duration": 185769.3,
+            "steps": [],
+            "summary": "",
+            "weight": 160391.9
+          }
+        ],
+        "weight": 160391.9,
+        "weight_name": "routability"
+      }
+    ],
+    "version": "202401.221.5223",
+    "waypoints": [
+      {
+        "distance": 9.637769,
+        "hint": "oH0OgKt6TYNYAAAANgAAAAAAAAAAAAAAMfITQtFHsUEAAAAAAAAAAFgAAAA2AAAAAAAAAAAAAADsAAAAUWaYBCb4tQH-ZZgEVfi1AQAATw0N_QXw",
+        "location": [
+          77.096529,
+          28.702758
+        ],
+        "name": "B Block Road"
+      },
+      {
+        "distance": 32.220434,
+        "hint": "yuUCgM2-c4A7AAAAEQAAACYAAABEAAAAo4PGQc6S1kBsAoBB8pbiQTsAAAARAAAAJgAAAEQAAADsAAAADtaVBKChgQBd1ZUEuKCBAAEAPxMN_QXw",
+        "location": [
+          76.928526,
+          8.49552
+        ],
+        "name": ""
+      }
+    ]
+  }

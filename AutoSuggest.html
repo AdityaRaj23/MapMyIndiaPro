@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autosuggest API Proxy</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100">
+    <div class="container mx-auto py-8">
+        <h1 class="text-3xl font-bold mb-4">Autosuggest API Proxy</h1>
+        <div class="flex space-x-4">
+            <div class="w-1/2">
+                <input type="text" id="queryInput1" class="w-full border rounded px-4 py-2" placeholder="Enter your query">
+                <div id="results1" class="mt-2"></div>
+            </div>
+            <div class="w-1/2">
+                <input type="text" id="queryInput2" class="w-full border rounded px-4 py-2" placeholder="Enter your query">
+                <div id="results2" class="mt-2"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function search(inputId) {
+            var query = document.getElementById(inputId).value;
+            var xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === XMLHttpRequest.DONE) {
+                    if (xhr.status === 200) {
+                        var response = JSON.parse(xhr.responseText);
+                        displayResults(response, inputId);
+                    } else {
+                        console.error('Error:', xhr.status);
+                    }
+                }
+            };
+            xhr.open("GET", "http://127.0.0.1:5000/proxy?query=" + encodeURIComponent(query), true);
+            xhr.send();
+        }
+
+        function displayResults(data, inputId) {
+            var resultsDiv = document.getElementById("results" + inputId.slice(-1));
+            resultsDiv.innerHTML = ""; // Clear previous results
+            if (data.suggestedLocations.length > 0) {
+                data.suggestedLocations.forEach(function (result) {
+                    var resultDiv = document.createElement("div");
+                    resultDiv.textContent = result.placeAddress; // Assuming 'placeAddress' is the property containing the result
+                    resultDiv.classList.add("cursor-pointer", "hover:bg-gray-200", "px-4", "py-2", "border-b");
+                    resultDiv.addEventListener("click", function () {
+                        document.getElementById(inputId).value = result.placeAddress;
+                        resultsDiv.innerHTML = ""; // Clear results after selection
+                    });
+                    resultsDiv.appendChild(resultDiv);
+                });
+            } else {
+                resultsDiv.textContent = "No results found";
+            }
+        }
+
+        document.getElementById("queryInput1").addEventListener("input", function () {
+            search("queryInput1");
+        });
+
+        document.getElementById("queryInput2").addEventListener("input", function () {
+            search("queryInput2");
+        });
+    </script>
+</body>
+
+</html>

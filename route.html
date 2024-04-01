@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Routing API with Driving Profile</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 h-screen flex flex-col items-center justify-center">
+    <h1 class="text-3xl font-bold mb-4">Routing API with Driving Profile</h1>
+    <div id="results" class="mt-4"></div>
+
+    <script>
+        // Fetch data from the Flask proxy
+        fetch('http://127.0.0.1:5000/proxy/ef0e03eca3a26a3218b5f828412a486b/route_eta/driving/DDT7VL;U9NU7W')
+            .then(response => response.json())
+            .then(data => {
+                // Display the data on the webpage
+                var resultsDiv = document.getElementById("results");
+                resultsDiv.innerHTML = "<h2 class='text-xl font-bold mb-2'>Routing Results</h2>";
+
+                data.waypoints.forEach(route => {
+                        var routeDiv = document.createElement("div");
+                        routeDiv.innerHTML = `<p><strong>Name:</strong> ${route.name == 0 ? "unknown location" : route.name}</p>`;
+                        routeDiv.innerHTML += `<p><strong>Distance:</strong> ${route.distance}</p>`;
+                        resultsDiv.appendChild(routeDiv);
+                });
+            }).catch(error => console.error('Error:', error));
+    </script>
+</body>
+
+</html>
